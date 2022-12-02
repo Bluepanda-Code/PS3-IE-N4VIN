@@ -1,0 +1,48 @@
+//INHERITENCE-SINGLE,MULTI AND HIERARCHY
+//PROGRAM 1 - BY NAVIN VISHWAKARMA
+import java.util.*;
+class contr
+{
+    //a different class - container
+    float length,breadth,height;
+    contr(){
+
+    }
+    contr(float l,float b,float h)
+    {
+        length = l;
+        breadth = b;
+        height = h;
+    }
+    void getVolume()
+    {
+        System.out.println("The Total Volume of the Refrigerator is :" +length*breadth*height);
+    }
+    void getArea(){
+        System.out.println("Area covered by the fridge : "+length*breadth);
+    }
+
+}
+public class Fridge extends contr
+{
+    float weight;
+    Fridge(){
+
+    }
+    Fridge(float l,float b,float h,float w)
+    {
+        super(l, b, h);
+        weight = w;
+
+    }
+    public static void main(String[] args)
+    {
+        Fridge rf = new Fridge(15,10,20,121);
+        System.out.println("Height of the Fridge is  "+rf.height);
+        System.out.println("Length of the Fridge is  "+rf.length);
+        System.out.println("Weight of the Fridge is  "+rf.weight);
+	  rf.getArea();
+	  rf.getVolume();
+        
+    }
+}
