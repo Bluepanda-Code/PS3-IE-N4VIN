@@ -1,0 +1,28 @@
+class Calculation {
+    int z;
+
+    public void addition(int x, int y) {
+        z = x + y;
+        System.out.println("The sum of the given numbers:"+z);
+    }
+
+    public void Subtraction(int x, int y) {
+        z = x - y;
+        System.out.println("The difference between the given numbers:"+z);
+    }
+}
+
+class A_Calculation extends Calculation {
+    public void multiplication(int x, int y) {
+        z = x * y;
+        System.out.println("The product of the given numbers:" + z);
+    }
+
+    public static void main(String args[]) {
+        int a = 15, b = 25;
+        A_Calculation u = new A_Calculation();
+        u.addition(a, b);
+        u.Subtraction(a, b);
+        u.multiplication(a, b);
+    }
+}
