@@ -1,0 +1,34 @@
+class Ecosystem{
+    public Ecosystem(){}
+    public void Types(){
+        System.out.println("Ecosystem is of two types :- ");
+    }
+}
+class Terrestrial extends Ecosystem{
+    public Terrestrial(){}
+    public void type1(){
+        System.out.println("1. Terrestrial ");
+        System.out.println("   a. Forest Ecosystem\n" +
+                           "   b. Grassland Ecosystem\n" +
+                           "   c. Tundra Ecosystem\n" +
+                           "   d. Desert Ecosystem");
+    }
+}
+class Aquatic extends Ecosystem{
+    public Aquatic (){}
+    public void type2 (){
+        System.out.println("2. Aquatic ");
+        System.out.println("   a. Freshwater Ecosystem\n" +
+                           "   b. Marine Ecosystem");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Ecosystem x = new Ecosystem();
+        Terrestrial y = new Terrestrial();
+        Aquatic z = new Aquatic();
+        x.Types();
+        y.type1();
+        z.type2();
+    }
+}
